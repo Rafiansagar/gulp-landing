@@ -1,0 +1,38 @@
+/*----------------------------------------
+    # Testimonials CSS
+----------------------------------------*/
+.rs-testimonials {
+    .testimonial-grid {
+        background: rgba(43, 79, 255, 0.9);
+        padding: 40px 30px;
+        border-radius: 5px;
+        min-height: 366px;
+        .desc {
+            color: $whiteColor;
+            font-style: italic;
+        }
+        .reviewer {
+            margin-top: 25px;
+            .info-part {
+                .name {
+                    color: $whiteColor;
+                    margin: 0;
+                    font-size: 18px;
+                }
+            }
+        }
+        .ratings {
+            margin-top: 15px;
+            li {
+                display: inline-block;
+                margin-right: 4px;
+                i {
+                    color: yellow;
+                }
+                &:last-child {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

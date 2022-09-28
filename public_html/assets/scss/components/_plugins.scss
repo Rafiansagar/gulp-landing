@@ -1,0 +1,45 @@
+/*----------------------------------------
+    # Plugins Section CSS
+----------------------------------------*/
+.rs-plugins {
+    .bottom-part {
+        box-shadow: 0 0 20px rgba(0,0,0,0.05);
+        .rs-carousel {
+            border-bottom: 5px solid $secondaryColor;
+        }
+        .items {
+            text-align: center;
+            background: $whiteColor;
+            height: 214px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-right: 1px solid #eee;
+            padding: 0 15px;
+            .wrapping {
+                img {
+                    width: unset;
+                    margin: 0 auto;
+                }
+                .title {
+                    margin-top: 18px;
+                    font-size: 21px;
+                    line-height: 30px;
+                    font-weight: 700;
+                }
+            }
+        }
+        .owl-carousel {
+            position: relative;
+            &:after {
+                position: absolute;
+                content: '';
+                right: 0;
+                top: 0;
+                width: 1px;
+                height: 100%;
+                background: $whiteColor;
+            }
+        }
+    }
+}

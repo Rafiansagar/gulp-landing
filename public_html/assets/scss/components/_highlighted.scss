@@ -1,0 +1,59 @@
+
+/*----------------------------------------
+    # Highlighted Feature Section CSS
+----------------------------------------*/
+.rs-highlighted {
+    .sec-title > .title{   
+        position: relative;
+        max-width: 700px;
+        margin: 0 auto;
+        &:after{
+            content: "";
+            position: absolute;
+            width: 50px;
+            height: 4px;
+            background: $primaryColor;
+            top: 0;
+            bottom:  auto;
+            left: auto;
+            right: auto;
+            
+        }
+    }
+    .grid-wrap {
+        background: rgba(255,255,255,1);
+        border-radius: 5px;
+        position: relative;
+        &:after{
+            content: "";
+            position: absolute;
+            width: 60px;
+            height: 30px;
+            background: $primaryColor;
+            top: auto;
+            bottom:  0px;
+            right: 0;
+            left: auto;
+        }
+        .img-part {
+            margin-bottom: 30px;
+            border-radius: 0;
+            overflow: hidden;
+        }
+        .content-part {
+            padding: 0px 25px 50px;
+            text-align: center;
+            .title {
+                font-size: 22px;
+                line-height: 32px;
+                font-weight: 700;
+                margin-bottom: 10px;
+                position: relative;
+            }
+            .desc{
+                margin: 0 auto;
+                max-width: 92%;
+            }
+        }
+    }
+}

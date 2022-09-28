@@ -1,0 +1,23 @@
+/*.....................................
+    Template Name: Sasly – Multi-Purpose Saas Landing Theme
+    Template URL: https://rstheme.com/products/wordpress/sasly
+    Description: Multi-Purpose Saas Landing Theme
+    Author: RS-Theme
+    Author URL: https://rstheme.com/
+.......................................*/
+
+@import "common/variables";
+@import "common/responsive";
+@import "common/common";
+
+@import "components/banner";
+@import "components/counter";
+@import "components/feature";
+@import "components/highlighted";
+@import "components/plugins";
+@import "components/preview";
+@import "components/testimonial";
+
+@import "layout/footer";
+@import "layout/header";
+@import "layout/section";

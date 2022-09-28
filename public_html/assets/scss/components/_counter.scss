@@ -1,0 +1,48 @@
+/*----------------------------------------
+    # Counter Section CSS
+----------------------------------------*/
+.rs-counter {
+    .counter-wrap {
+        text-align: center;
+        .icon-part {
+            margin-bottom: 0 !important;
+            color: $primaryColor;
+            i {
+                &:before {
+                    font-size: 60px;
+                }
+                &.flaticon-layout {
+                    position: relative;
+                    top: 4px;
+                }
+            }
+        }
+        h3.number {
+            font-size: 60px;
+            line-height: 1.24;
+            color: $primaryColor;
+            margin-bottom: 10px;
+            position: relative;
+            font-weight: 700;
+            display: inline;
+            &.plus {
+                padding-right: 40px;
+                &:after {
+                    position: absolute;
+                    content: "+";
+                    right: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+        .title {
+            margin-top: 20px;
+            margin-bottom: 0;
+            color: $whiteColor;
+            font-size: 18px;
+            font-weight: 600;
+            font-family: $bodyFont;
+        }
+    }
+}

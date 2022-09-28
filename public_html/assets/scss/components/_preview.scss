@@ -1,0 +1,82 @@
+
+/*----------------------------------------
+    # Preview Section CSS
+----------------------------------------*/
+.rs-preview-demos {
+    .demo-wrap {
+        box-shadow: 3px 5px 25px 0 rgba(0, 0, 0, 0.1);
+        .image-part {
+            img {
+                width: 100%;
+            }
+        }
+        .content-part {
+            text-align: center;
+            padding: 30px 30px 30px;
+            background: $grayColor2;
+            .title {
+                font-size: 26px;
+                font-weight: 700;
+                line-height: 36px;
+                display: inline-block;
+                position: relative;
+                margin-bottom: 0;
+                a {
+                    color: $titleColor;
+                    &:hover {
+                        color: $primaryColor;
+                    }
+                }
+                span.number {
+                    font-size: 30px;
+                    line-height: 40px;
+                    color: $primaryColor;
+                    display: none;
+                }
+                span.new {
+                    font-size: 13px;
+                    position: absolute;
+                    right: -63px;
+                    top: -10px;
+                    font-style: normal;
+                    font-weight: 400;
+                    background: #ff0000;
+                    color: $whiteColor;
+                    display: inline-block;
+                    padding: 5px 10px;
+                    line-height: 1;
+                    border-radius: 30px;
+                    &:after {
+                        position: absolute;
+                        content: '';
+                        left: -11px;
+                        bottom: 0;
+                        border-left: 11px solid transparent;
+                        border-right: 9px solid transparent;
+                        border-bottom: 14px solid #ff0000;
+                    }
+                }
+            }
+            .btn-part {
+                margin-top: 26px;
+                li {
+                    display: inline;
+                    margin-right: 20px;
+                    a {
+                        width: 120px;
+                        padding: 6px 0;
+                    }
+                    &:last-child {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+        &.coming {
+            .content-part {
+                padding-top: 30px;
+                padding-bottom: 28px;
+            }
+        }
+    }
+}

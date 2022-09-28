@@ -1,0 +1,629 @@
+
+
+/* 1. Theme default fonts */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap');
+
+html,
+body {
+    font-size: 16px;
+    font-family: $bodyFont;
+    color: $bodyColor;
+    vertical-align: baseline;
+    line-height: 28px;
+    font-weight: 400;
+    overflow-x: hidden;
+    position: relative;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+p {
+    margin: 0 0 26px;
+}
+.pt220{
+    padding-top: 220px;
+}
+.bg-black{
+    background: #010101;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $titleFont;
+    color: $titleColor;
+    margin: 0 0 26px;
+    font-weight: 700;
+}
+a {
+    text-decoration: none;
+    transition: $transition;
+}
+a:active,
+a:hover {
+    text-decoration: none;
+    outline: 0 none;
+    color: $primaryColor;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+::-moz-selection {
+    background: $primaryColor;
+    text-shadow: none;
+    color: $whiteColor;
+}
+::selection {
+    background: $primaryColor;
+    text-shadow: none;
+    color: $whiteColor;
+}
+.colorw{
+    color: white !important;
+}
+.top-5 {
+    top: 5px;
+}
+.top-6 {
+    top: 6px;
+}
+.top-7 {
+    top: 7px;
+}
+.top-8 {
+    top: 8px;
+}
+.top-9 {
+    top: 9px;
+}
+.top-10 {
+    top: 10px;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+.clear {
+    clear: both;
+}
+.disable {
+    cursor: not-allowed;
+}
+[class^="flaticon-"]:before,
+[class*=" flaticon-"]:before,
+[class^="flaticon-"]:after,
+[class*=" flaticon-"]:after {
+    margin: 0;
+}
+.y-middle {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.y-bottom {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: flex-end;
+    -webkit-align-items: flex-end;
+    align-items: flex-end;
+}
+.no-gutter {
+    margin-left: 0;
+    margin-right: 0;
+    > [class*="col-"] {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+.gutter-50 {
+    margin-left: -25px;
+    margin-right: -25px;
+    > [class*="col-"] {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+.gutter-70 {
+    margin-left: -35px;
+    margin-right: -35px;
+    > [class*="col-"] {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+.rs-carousel {
+    &.nav-style1 {
+        position: relative;
+        .owl-nav {
+            position: absolute;
+            bottom: -45px;
+            left: 50%;
+            transform: translateX(-50%);
+            .owl-prev,
+            .owl-next {
+                width: 30px;
+                height: 30px;
+                line-height: 29px;
+                border-radius: 100%;
+                background: $whiteColor;
+                color: $primaryColor;
+                text-align: center;
+                transition: $transition;
+                box-shadow: 0 0 14px rgba(0,0,0,0.06);
+                display: inline-block;
+                i {
+                    transition: $transition;
+                    &:before {
+                        font-family: Flaticon;
+                        font-size: 16px;
+                    }
+                }
+                &:hover {
+                    background: $primaryColor;
+                    color: $whiteColor;
+                }
+            }
+            .owl-prev {
+                margin-right: 10px;
+                i {
+                    &:before {
+                        content: "\f116";
+                    }
+                }
+            }
+            .owl-next {
+                i {
+                    &:before {
+                        content: "\f115";
+                    }
+                }
+            }
+        }
+    }
+    &.dot-style1 {
+        .owl-dots {
+            text-align: center;
+            .owl-dot {
+                width: 25px;
+                height: 8px;
+                display: inline-block;
+                border-radius: 50px;
+                margin: 0 5px;
+                background: $primaryColor;
+                transition: $transition;
+                -webkit-transition: $transition;
+                -webkit-box-shadow: 0 3px 8px 0 rgba(0,0,0,.25);
+                -moz-box-shadow: 0 3px 8px 0 rgba(0,0,0,.25);
+                box-shadow: 0 3px 8px 0 rgba(0,0,0,.25);
+                opacity: .5;
+                &:hover {
+                    width: 40px;
+                    opacity: 1;
+                }
+                &.active {
+                    width: 40px;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+.custom-for-sl {
+    .rs-carousel {
+        .owl-stage-outer {
+            .owl-item {
+                padding-right: 15px;
+                padding-left: 15px;
+            }
+        }
+    }
+}
+.white-color {
+    color: $whiteColor;
+}
+.primary-color {
+    color: $primaryColor;
+}
+.secondary-color {
+    color: $secondaryColor;
+}
+.primary-bg {
+    background: $primaryColor;
+}
+.secondary-bg {
+    background: $secondaryColor;
+}
+.title-color-bg {
+    background: $titleColor;
+}
+.gray-bg {
+    background: $grayColor;
+}
+.gray-bg2 {
+    background: $grayColor2;
+}
+.bg1 {
+    background: url(../../../assets/images/bg/bg1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.bg2 {
+    background: url(../../../assets/images/bg/bg2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.waving-line {
+    padding-bottom: 0px;
+    position: relative;
+    &:after {
+        display: none;
+        position: absolute;
+        content: '';
+        left: 0;
+        bottom: 0;
+        width: 114px;
+        height: 12px;
+        animation: waving-line 12s linear infinite;
+        -webkit-animation: waving-line 12s linear infinite;
+        background: url(../../../assets/images/waving-line.png);
+    }
+    &.center {
+        &:after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &.white-color {
+        &:after {
+            background: url(../../../assets/images/waving-line-white.png);
+        }
+    }
+}
+.container-fluid{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.container-fluid2{
+    padding-left: 130px;
+    padding-right: 130px;
+}
+.readon {
+    padding: 10px 30px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    display: inline-block;
+    background: $secondaryColor;
+    color: $whiteColor;
+    border: 2px solid $secondaryColor;
+    transition: $transition;
+    img {
+        width: 20px;
+        margin-right: 6px;
+    }
+    span.price {
+        font-size: 20px;
+        font-weight: 700;
+        color: $whiteColor;
+        transition: $transition;
+    }
+    &:hover {
+        background: $primaryColor;
+        color: $whiteColor;
+        border-color: $primaryColor;
+    }
+    &.active {
+        background: transparent;
+        color: $secondaryColor;
+        border-color: $secondaryColor;
+        &:hover {
+            background: $secondaryColor;
+            border-color: $secondaryColor;
+            color: $whiteColor;
+        }
+    }
+    &.white-btn {
+        background: $whiteColor;
+        color: $titleColor;
+        border-color: $whiteColor;
+        span.price {
+            color: $secondaryColor;
+        }
+        &:hover {
+            background: $primaryColor;
+            color: $whiteColor;
+            border-color: $primaryColor;
+            span.price {
+                color: $whiteColor;
+            }
+        }
+    }
+    &.clickup {
+        &:hover {
+            background: $primaryColor;
+            color: $whiteColor;
+            border-color: $primaryColor; 
+        }
+    }
+}
+.sec-title {
+    .sub-title {
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 500;
+        letter-spacing: 3px;
+        margin-bottom: 15px !important;
+        background: $secondaryColor;
+        padding: 2px 20px;
+        border-radius: 30px;
+        color: $whiteColor;
+        display: inline-block;
+        margin: 0 auto;
+        &.white-style {
+            background: $whiteColor;
+            color: $secondaryColor;
+        }
+    }
+    .title {
+        font-size: 45px;
+        line-height: 55px;
+        font-weight: 700;
+    }
+}
+
+/*----------------------------------------
+    # Page Builder Section CSS
+----------------------------------------*/
+.rs-page-builder {
+    position: relative;
+    &:after {
+        position: absolute;
+        content: '';
+        width: 50%;
+        right: 0;
+        height: 100%;
+        top: 0;
+        background: $grayColor2;
+        z-index: -1;
+    }
+}
+
+/*----------------------------------------
+    # Woocommerce Ready Section CSS
+----------------------------------------*/
+.rs-woocommerce {
+    position: relative;
+    &:after {
+        position: absolute;
+        content: '';
+        width: 50%;
+        left: 0;
+        height: 100%;
+        top: 0;
+        background: $grayColor2;
+        z-index: -1;
+    }
+}
+
+/*----------------------------------------
+    # Modal Button CSS
+----------------------------------------*/
+.modal-btn {
+    position: fixed;
+    top: 35%;
+    transform: translateY(-65%);
+    text-align: center;
+    z-index: 10;
+    right: 0;
+    left: auto;
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        padding: 8px 0;
+        box-shadow: 0 3px 15px rgba(0,0,0,.1);
+        border-radius: 5px 0 0 5px;
+        background: #fff;
+        li {
+            margin: 4px 0;
+            a {
+                width: 40px;
+                text-align: center;
+                display: inline-block;
+                color: #000;
+                position: relative;
+                span {
+                    position: absolute;
+                    background-color: #222;
+                    color: #fff;
+                    white-space: nowrap;
+                    padding: 0 12px;
+                    font-size: 13px;
+                    top: 0;
+                    right: 100%;
+                    margin-right: 12px;
+                    opacity: 0;
+                    visibility: hidden;
+                    -webkit-transition: all .3s linear 0ms;
+                    -khtml-transition: all .3s linear 0ms;
+                    -moz-transition: all .3s linear 0ms;
+                    -ms-transition: all .3s linear 0ms;
+                    -o-transition: all .3s linear 0ms;
+                    transition: all .3s linear 0ms;
+                    &:before {
+                        content: '';
+                        border-color: #222;
+                        border-style: solid;
+                        border-color: transparent transparent transparent #222;
+                        border-width: 6px;
+                        position: absolute;
+                        top: 50%;
+                        right: -12px;
+                        -webkit-transform: translate(0,-50%);
+                        -khtml-transform: translate(0,-50%);
+                        -moz-transform: translate(0,-50%);
+                        -ms-transform: translate(0,-50%);
+                        -o-transform: translate(0,-50%);
+                        transform: translate(0,-50%);
+                    }
+                }
+                &:hover {
+                    color: $primaryColor;
+                    span {
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*----------------------------------------
+    # Sidebar Demo CSS
+----------------------------------------*/
+.nav-expander {
+    color: red;
+}
+.nav-expanded .off-wrap {
+    opacity: 0.5;
+    z-index: 200;
+}
+.off-wrap {
+    position: absolute;
+    width: 100%;
+    background: red;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+    z-index: -1;
+    transition: all 0.5s ease 0s;
+}
+
+/*----------------------------------------
+    # ScrollUp CSS
+----------------------------------------*/
+#scrollUp {
+    text-align: center;
+    bottom: 40px;
+    cursor: pointer;
+    display: none;
+    position: fixed;
+    right: 40px;
+    z-index: 10;
+    border-radius: 50px 50px 4px 4px;
+    i {
+        background-color: $secondaryColor;
+        color: #fff;
+        height: 40px;
+        font-size: 24px;
+        width: 42px;
+        border-radius: 4px;
+        line-height: 36px;
+        transition: all 0.3s ease 0s;
+        margin-left: 2px;
+        &:hover, 
+        &:focus {
+            background: $secondaryColor;
+        }
+    }
+}
+
+/*----------------------------------------
+    # Preloader CSS
+----------------------------------------*/
+.loadding-page{
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    margin-top: 0px;
+    top: 0px;
+    z-index: 999999;   
+}
+.loader {
+    position: absolute;
+    width: 75px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.spinner {
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    margin-left: -20px;
+    background-color: $secondaryColor;
+    border-radius: 100%;  
+    -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
+    animation: sk-scaleout 1.0s infinite ease-in-out;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.spinner_inner-image{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 99;
+    transform: translate(-50%, -50%);
+}
+@-webkit-keyframes sk-scaleout {
+  0% { -webkit-transform: scale(0) }
+  100% {
+    -webkit-transform: scale(1.1);
+    opacity: 0;
+  }
+}
+@keyframes sk-scaleout {
+  0% { 
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  } 100% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    opacity: 0;
+  }
+}
+
+/* Waving Line Animation */
+@keyframes waving-line{
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -200px 0;
+    }
+}
+@-webkit-keyframes waving-line {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -200px 0;
+    }
+}

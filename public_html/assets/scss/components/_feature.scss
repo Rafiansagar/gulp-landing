@@ -1,0 +1,62 @@
+
+/*----------------------------------------
+    # Template Features CSS
+----------------------------------------*/
+.rs-features {
+    background: #fff;
+    .sec-title {
+        z-index: 2;
+        position: relative;
+    }
+   .single-service{
+        transition: 0.4s;
+        -webkit-transition: 0.5s;
+        -ms-transition: 0.5s;
+        border-radius: 30px;
+        z-index: 2;
+        position: relative;
+        box-shadow: 0 0 50px 0 rgba(0,0,0, 0.07);
+        padding: 60px 20px 60px;
+        .service-icon{
+            margin-bottom: 20px !important;
+            margin: 0 auto;
+            img {
+                width: 100%;
+                max-width: 70px;
+            }
+            i {
+               color: #f2830c;
+                &:before {
+                    font-size: 60px;
+                    position: relative;
+                }
+                &.flaticon-layout {
+                    &:before {
+                        top: 4px;
+                    }
+                }
+            }
+        }
+        .services-content{
+            .title {
+                margin-bottom: 0;
+                font-weight: 700;
+                font-size: 20px;
+                color: $titleColor;
+                transition: $transition;
+                -webkit-transition: $transition;
+                -ms-transition: $transition;
+                font-family: $titleFont;
+            }
+        }
+    }
+    .particle-banner {
+        overflow: hidden;
+        position: relative;
+        .ball {
+            position: absolute;
+            border-radius: 100%;
+            opacity: 1;
+        }
+    }
+}
