@@ -32,5 +32,9 @@
     "opera >= 23",
     "ios >= 7",
     "android >= 4"
-  ]
+  ],
+  "dependencies": {
+    "gulp-zip": "^5.1.0",
+    "node-sass": "^8.0.0"
+  }
 }
